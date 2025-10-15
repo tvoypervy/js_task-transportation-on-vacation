@@ -20,7 +20,7 @@ function calculateRentalCost(days) {
     return totalCost - SHORT_RENTAL_DISCOUNT;
   }
 
-  if (days < 3) {
+  if (days < SHORT_RENTAL_DAYS) {
     return totalCost;
   }
 }
